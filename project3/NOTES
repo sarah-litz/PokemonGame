@@ -1,0 +1,29 @@
+test cases for each function and class ~~ 
+
+~~ edge/corner cases 
+~~everytime u write a line of code, compile it. 
+
+Game Start: 
+~~welcome statements: 
+    Welcome to pokemon! Please state your name: 
+~~enter username
+    Welcome! ... choose a starting pokemon: (also defines what starting position will be)  
+    1. Bulbasaur
+    2. Charmander
+    3. Squirtle
+    4. Pikachu
+    
+create GameBoard instance
+read map.txt into GameBoard instance
+read pokemon.txt into GameBoard instance
+
+create Tile instance~~only contains the tileTypes (w,p,C,G) 
+create HazardTile instance~~contains info on locations of trainers and wild pokemon; cannot go on water. randomly assign spots on map 
+        initialize gyms, trainers(w/ their 1-6 random pokemon), and the pokemon centers. 
+        scatter the 20 random wild pokemon across the land 
+        scatter the gyms/centers around the land
+        ^^starting position cannot be the same as these spots, so don't let them go the starting position tiles.
+        also starting position cannot be on water.   
+
+
+display 7 x 7 view of board. place <username's> starting pokemon on map in starting position (defined in packet) 
